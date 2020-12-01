@@ -1,0 +1,29 @@
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 9rem;
+}
+
+.content-links>div {
+    margin-right: 0.5rem;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    & .fa {
+        margin-right: 1rem;
+    }
+    span {
+        font-size: 0.7rem;
+        margin-right: 1rem;
+    }
+}
+
+.content-links {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}

@@ -1,0 +1,22 @@
+<div class="speak-out" *ngIf="toggleSection">
+    <div class="counted-section">
+        <span>Speak out. Be heard. </span>
+        <span class="bold-class"> Be counted</span>
+    </div>
+    <div class="rule-of-thumb">
+        <span>Rule of thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It`s easy: You share your opinion, we analyze and put the data in a public report.</span>
+        <button type="button" (click)="toggleSection=!toggleSection" class="close close-icon" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+
+</div>
+<div class="votes">
+    <h3>Votes</h3>
+</div>
+<div class="container-cards">
+    <ng-container *ngFor="let peopleData of (dataCards | async)">
+        <app-card class="card-type" (emitThumbsUp)="isThumbUpVote($event,peopleData.id)" [voteAgain]="peopleData.voteAgain" [id]="peopleData.id" [urlImage]="peopleData.imageUrl" [cardTitle]="peopleData.name" [cardInfo]="peopleData.info" [cardDescription]="peopleData.description"
+            [thumbsUp]="peopleData.thumbUp" [thumbsDown]="peopleData.thumbDown"></app-card>
+    </ng-container>
+</div>

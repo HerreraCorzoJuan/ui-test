@@ -1,0 +1,52 @@
+<div class="card bg-dark text-white">
+    <img [src]="urlImage" class="card-img" alt="...">
+    <div class="card-img-overlay">
+        <div class="card-custom-content">
+            <div class="card-info-content">
+                <div class="title-section">
+                    <div class="thumbs-section" [ngClass]="{'custom-color-thumbs-up': thumbsUp > thumbsDown, 'custom-color-thumbs-down': thumbsDown > thumbsUp}">
+                        <i class="fa thumbs icon-custom-color" [ngClass]="{'fa-thumbs-down': thumbsDown > thumbsUp, 'fa-thumbs-up': thumbsUp > thumbsDown}"></i>
+                    </div>
+                    <h5 class="card-title">{{cardTitle}}</h5>
+                </div>
+                <div class="card-content-votes">
+                    <p class="card-text card-info">{{cardInfo}}</p>
+                    <p class="card-text">{{cardDescription}}</p>
+                    <ng-container *ngIf="!voteAgain">
+                        <button type="button" class="btn custom-color-thumbs-up active" (click)="setStateClick($event)" [ngClass]="{'higlight': thumbsUpClicked}" [id]="id+'-thumbs-up'">
+                    <i class="fa thumbs fa-thumbs-up icon-custom-color"></i>
+                </button>
+                        <button type="button" class="btn custom-color-thumbs-down" (click)="setStateClick($event)" [ngClass]="{'higlight': thumbsDownClicked}" [id]="id+'-thumbs-down'">
+                    <i class="fa thumbs fa-thumbs-down icon-custom-color"></i>
+                </button>
+                    </ng-container>
+                    <button data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-vote" (click)="submitVote()" type="submit">{{voteAgain ? 'Vote again' : 'Vote now'}}</button>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-thumbs-up" role="progressbar" [style.width]="thumbsUpPercentage | percent" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-content">
+                        <i class="fa thumbs fa-thumbs-up icon-custom-color"></i> {{thumbsUpPercentage | percent}}
+                    </div>
+                </div>
+                <div class="progress-bar bg-thumbs-down" role="progressbar" [style.width]="thumbsDownPercentage | percent" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">
+                    <div class="content-thumbs-down">
+                        {{thumbsDownPercentage | percent}}<i class="fa thumbs fa-thumbs-down icon-custom-color"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Thank you for voting!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

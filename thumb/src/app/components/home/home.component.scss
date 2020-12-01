@@ -1,0 +1,75 @@
+::ng-deep .test-cont-navbar {
+    display: flex;
+    width: 100%;
+    background-image: url('/assets/popeFrancis.jpg');
+    background-size: cover;
+    height: 37.5rem;
+}
+
+::ng-deep .body-container {
+    margin: 0 2rem;
+}
+
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card-type {
+    width: 50%;
+}
+
+.votes {
+    margin-top: 2rem;
+    h3 {
+        font-weight: 200;
+        font-size: 2.5rem;
+    }
+}
+
+.speak-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    margin-top: 2rem;
+    padding: 1.3rem;
+    & .counted-section {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+    & .rule-of-thumb {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        font-weight: 100;
+    }
+}
+
+.close-icon {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.bold-class {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.custom-card-blurred {
+    transform: translate(0.625rem, -22rem);
+    background-color: transparent;
+}
+
+.card .img-blurred {
+    filter: blur(2px);
+    opacity: 0.5;
+    height: 50%;
+    background-image: url('/assets/banner.svg');
+}

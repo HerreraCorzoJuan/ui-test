@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.body {
+    margin: 0 2rem;
+    @media (min-width: 576px) {
+        margin: 0 1 rem;
+    }
+    font-family: Lato;
+}

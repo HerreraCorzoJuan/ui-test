@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+    a {
+        color: black;
+    }
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+}

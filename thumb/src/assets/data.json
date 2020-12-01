@@ -1,0 +1,45 @@
+[{
+        "id": 1,
+        "type": "vote",
+        "name": "Kanye west",
+        "info": "1 month ago in Entertainment",
+        "description": "Incidunt et magni est ut.",
+        "thumbUp": 20,
+        "thumbDown": 30,
+        "imageUrl": "https://cdn.abcotvs.com/dip/images/6298733_070420-kanyewest.jpg",
+        "voteAgain": false
+    },
+    {
+        "id": 2,
+        "type": "vote",
+        "name": "Mark Zuckerberg",
+        "info": "1 month ago in Business",
+        "description": "Incidunt et magni est ut.",
+        "thumbUp": 50,
+        "thumbDown": 30,
+        "imageUrl": "https://i.guim.co.uk/img/media/73ce2f8798e6cd5dcbb40549a834829523d77adc/0_123_5280_3170/master/5280.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d9f7c43f4cb6ffdf7709ad576cd7a141",
+        "voteAgain": false
+    },
+    {
+        "id": 3,
+        "type": "vote",
+        "name": "Cristina Fernández de Kirchner",
+        "info": "1 month ago in Politics",
+        "description": "Incidunt et magni est ut.",
+        "thumbUp": 10,
+        "thumbDown": 5,
+        "imageUrl": "https://i.redd.it/00hltmx3nx751.jpg",
+        "voteAgain": false
+    },
+    {
+        "id": 4,
+        "type": "vote",
+        "name": "Malala Yousafai",
+        "info": "1 month ago in Entertainment",
+        "description": "Incidunt et magni est ut.",
+        "thumbUp": 20,
+        "thumbDown": 30,
+        "imageUrl": "https://starsunfolded.com/wp-content/uploads/2017/04/Malala-Yousafzai-1280x720.jpg",
+        "voteAgain": false
+    }
+]
