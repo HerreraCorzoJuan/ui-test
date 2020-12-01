@@ -63,3 +63,23 @@ Rely on a readme.md file to reference any key aspect you want to mention about w
 
 Send a link to your recruiter pointing to your repository (Github, Bitbucket) including 2 branches. One with the layout part and another one with the interactive (and NodeJS if applies) part.
 The master branch should contain the entire exercise.
+
+## Project Notes
+
+It´s an SPA developed using Angular as main framework. So you need to set up all the environment related to Angular apps in order to up and run the project.
+
+Some approaches to work on the SPA:
+* Local storage was used to save the state of app (For bigger apps it could have been implemented Ngrx and Reactive approach).
+* bootstrap was implemented as a CSS framework
+* FontAwesome Icons library was used for icons
+* Some CSS approaches based on flexbox and html 5
+
+
+
+What has left pending?
+* I did not managed to work on Mobile version.
+* Some pixel perfect stuff and the search label on the bottom of the page.
+* The card-info at the top of the page
+
+
+
